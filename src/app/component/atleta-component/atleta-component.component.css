@@ -51,21 +51,21 @@ input[type=radio]{
 }
 
 button{
-    width: 100px;
+    width: 200px;
     height: 40px;
     cursor: pointer;
     border: none;
-    color: var(--cor01);
+    color: var(--botao02);
     font-size: 20px;
     letter-spacing: 5px;
 }
 
 #btnAdd{
-    background-color: var (--cor01);
+    background-color: var(--cor-primaria);
     margin-right: 20px;
 }
 
 #btnLimpar{
-    background-color: var(--botao01);
+    background-color: var(--cor-primaria);
     margin-left: 20px;
 }
