@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+:root{
+    --cor-primaria: #1f2638;
+    --cor-secundaria: #ffffff;
+    --cor01: #f1f3f5;
+    --cor02: #000000;
+    --botao01: #4f63d9;
+    --botao02: #d9dee7; 
+}
