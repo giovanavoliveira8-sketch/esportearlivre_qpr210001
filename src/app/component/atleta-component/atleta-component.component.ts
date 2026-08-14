@@ -7,7 +7,7 @@ import { Atleta } from '../models/Atleta';
 @Component({
   selector: 'app-atleta-component',
   standalone: true,
-  imports: [FormsModule, Atleta],
+  imports: [FormsModule],
   templateUrl: './atleta-component.component.html',
   styleUrl: './atleta-component.component.css'
 })

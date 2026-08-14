@@ -29,6 +29,9 @@ input{
 
 .input01{
     width: 900px;
+    height: 100px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .input02{
