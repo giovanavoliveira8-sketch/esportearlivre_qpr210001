@@ -22,5 +22,19 @@ export class AtletaComponentComponent {
   //DECLARAÇÃO DAS FUNÇÕES
   exibirDados(){
     console.log(this.nome, this.cpf, this.sexo, this.cep, this.ruaLogradouro, this.bairro, this.cidade, this.uf)
+
+    this.limparDados()
+  }
+
+  limparDados(){
+     this.nome = ''
+     this.cpf = 0
+     this.sexo = ''
+     this.cep = 0
+     this.ruaLogradouro = ''
+     this.bairro = ''
+     this.cidade = ''
+     this.uf = ''
+
   }
 }
