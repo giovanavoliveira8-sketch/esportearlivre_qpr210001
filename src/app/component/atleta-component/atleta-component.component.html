@@ -1,7 +1,7 @@
 <section id="form">
     <h2> Cadastro do Atleta </h2>
 
-    <form action="" id="atleta">
+    <form action="form-atleta"(submit)="exibirDados()">
         <label for="nome"> Nome completo: </label>
         <input type="text" name="nome" id="nome" [(ngModel)]= "nome" class="input01" maxlength="60" required placeholder="Digite o nome completo.">
 
