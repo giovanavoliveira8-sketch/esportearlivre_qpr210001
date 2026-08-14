@@ -7,11 +7,13 @@ import { Atleta } from '../component/models/Atleta';
 
 export class AtletaServiceService {
        //DECLARANDO ARRAY atletas
-  private atletas: Atleta [] = []
+  private atletas: Atleta[] = []
 
       //DECLARANDO DAS FUNÇÕES DE MANIPULAÇÃO DO ARRAY
       //ADICIONANDO ELEMENTO 
       adicionarAtleta(atleta: Atleta){
+        //ARRRRRRRRRMENGUE PARA GERAR ID 
+        atleta.id = this.atletas.length +1
         this.atletas.push(atleta)
       }
 
@@ -22,9 +24,7 @@ export class AtletaServiceService {
         return this.atletas
       }
 
-  }
-
-  //REMOVER ELEMENTO 
+     //REMOVER ELEMENTO 
   removerElemento(idAtleta: number){
     this.atletas = this.atletas.filter(elem=>elem.id !== idAtleta)
   }
@@ -37,6 +37,9 @@ export class AtletaServiceService {
 
   //ALTERANDO ELEMENTO DO ARRAY 
   alterarElemento(atleta: Atleta){
-    let posArray = this.atletas.findIndex(elem=elem.id !== Atleta.id)
+    let posArray = this.atletas.findIndex(elem=>elem.id !== atleta.id)
     this.atletas[posArray] = atleta
   }
+  }
+
+  
