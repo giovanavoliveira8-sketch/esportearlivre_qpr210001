@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AtletaServiceService } from '../../service/atleta-service.service';
-
+import { Atleta } from '../models/Atleta';
 
 @Component({
   selector: 'app-atleta-component',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, Atleta],
   templateUrl: './atleta-component.component.html',
   styleUrl: './atleta-component.component.css'
 })
@@ -61,5 +61,5 @@ constructor (private atletaService: AtletaServiceService) {}
 
     this.atletaService.listarAtletas()
   }
-  
+
 }
