@@ -7,9 +7,11 @@ import { signal } from '@angular/core';
 @Component({
   selector: 'app-atleta-list-component',
   imports: [],
-  templateUrl: './atleta-list-component.html',
-  styleUrl: './atleta-list-component.css',
+  templateUrl: './atleta-list.component.html',
+  styleUrl: './atleta-list.component.css',
+  standalone: true
 })
+
 export class AtletaListComponent {
 
   //listaAtletas: Atleta[] = []
