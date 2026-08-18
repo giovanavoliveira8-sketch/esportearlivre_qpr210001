@@ -56,6 +56,14 @@ constructor (private atletaService: AtletaServiceService) {}
     atleta.uf = this.uf
 
     this.atletaService.salvarAtleta(atleta)
+    .subscribe({
+      next: (resposta) => {
+        console.log (resposta)
+      },
+    error:(msgErro)=>{
+      console.log (msgErro)
+    }
+    })
 
     this.limparDados()
 
