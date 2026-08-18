@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Atleta } from '../models/Atleta';
+import { Atleta } from '../component/models/Atleta';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 
