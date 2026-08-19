@@ -1,7 +1,7 @@
 <section id="form">
-    <h2> Cadastro do Atleta </h2>
+    <h2> {{ !editar ? 'Cadastro' : 'Alterar'}} Atleta </h2>
 
-    <form action="form-atleta"(submit)="salvar()">
+    <form action="form-atleta"(submit)="enviarDadosAtleta()">
         <label for="nome"> Nome completo: </label>
         <input type="text" name="nome" id="nome" [(ngModel)]= "nome" class="input01" maxlength="60" required placeholder="Digite o nome completo.">
 
@@ -29,7 +29,7 @@
         <input type="text" name="uf" id="uf" [(ngModel)]= "uf" class="input02" maxlength="60" required placeholder="Digite a UF.">
 
         <div id="div-btns">
-            <button type="submit" id="btnAdd"> Cadastrar </button>
+            <button type="submit" id="btnAdd"> {{ !editar ? 'Cadastrar' : 'Alterar'}} </button>
             <button type="reset" id="btnLimpar"> Limpar </button>
         </div>
 
