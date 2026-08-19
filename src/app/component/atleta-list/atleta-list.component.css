@@ -18,7 +18,7 @@
 }
 
 .atleta-item:hover {
-    background-color: var(--cor02);
+    background-color: var(--cor01);
 }
 
 .span-dados-atleta {
