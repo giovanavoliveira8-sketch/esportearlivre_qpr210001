@@ -34,7 +34,7 @@ export class AtletaServiceService {
     alterarAtleta(atleta: Atleta): Observable<Atleta> {
         const urlApi = `https://6a84898853754283b0b898a3.mockapi.io/api/v1/atleta/${atleta.id}`
 
-        return this.http.put<Atleta>(urlApi, atleta)
+        return this.http.post<Atleta>(urlApi, atleta)
     }
 }
 
