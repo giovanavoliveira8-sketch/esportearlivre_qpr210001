@@ -32,6 +32,7 @@ body {
     flex-direction: column;
 }
 
+
 /* Labels */
 #form label {
     margin-top: 10px;
@@ -60,6 +61,17 @@ body {
     color: #555;
 
     outline: none;
+}
+
+#form label,
+#form .input01,
+#form .input02[type="date"] {
+    width: 100%;
+}
+
+#form button {
+    width: 109px;
+    margin-top: 15px;
 }
 
 /* Descrição */
