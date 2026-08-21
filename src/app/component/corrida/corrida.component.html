@@ -1,5 +1,5 @@
 <section id="corrida">
-    <h2> Corridas Disponíveis </h2>
+    <h2>Corridas Disponíveis</h2>
 
     <div id="corridas">
         <table>
@@ -9,6 +9,30 @@
                 <th>Distâncias</th>
                 <th>Ação</th>
             </tr>
+
+            <!-- "Para cada corrida que existir dentro de corridas, crie uma <tr>." -->
+
+            <tr *ngFor="let corrida of corridas">
+
+                <!-- pega a descrição daquela corrida. -->
+                <td>{{ corrida.descricao }}</td>
+
+                <td>{{ corrida.data }}</td>
+
+                <td>
+                    <!-- só mostra 5km se distancia5 for true. -->
+                    <span *ngIf="corrida.distancia5">5km </span>
+                     <!-- só mostra 10km se distancia5 for true. -->
+                    <span *ngIf="corrida.distancia10">10km </span>
+                     <!-- só mostra 25km se distancia5 for true. -->
+                    <span *ngIf="corrida.distancia25">25km</span>
+                </td>
+
+                <td>
+                    <button type="button"> Inscreva-se</button>
+                </td>
+            </tr>
+
         </table>
     </div>
 </section>

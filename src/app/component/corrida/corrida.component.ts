@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Corrida } from '../models/Corrida';
 import { CorridaService } from '../../service/corrida.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-corrida',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './corrida.component.html',
   styleUrl: './corrida.component.css'
 })

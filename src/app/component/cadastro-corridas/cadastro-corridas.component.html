@@ -1,18 +1,18 @@
 <section id="form">
     <h2> Cadastro de Corrida </h2>
 
-    <form action= "form-corridas">
+    <form id="form-corridas">
         <label for="descricao"> Descrição da Corrida: </label>
-        <input type="text" name="descricao" id="descricao" class="input01" maxlength="600" required placeholder="Ex: 5° Maratona Nortuna da Cidade">
+        <input type="text" name="descricao" id="descricao" [(ngModel)]="corrida.descricao" class="input01" maxlength="600" required placeholder="Ex: 5° Maratona Nortuna da Cidade" >
 
         <label for="datadacorrida"> Data da Corrida: </label>
-        <input type="date" name="datadacorrida" id="datadacorrida" class="input02" >
+        <input type="date" name="datadacorrida" id="datadacorrida" [(ngModel)]="corrida.data" class="input02" >
 
         <label for="distancias"> Distâncias Disponíveis: </label>
-        <input type="checkbox" name="distancias" id="distancias" class="input02"> 5km
-        <input type="checkbox" name="distancias" id="distancias" class="input02"> 10km
-        <input type="checkbox" name="distancias" id="distancias" class="input02"> 25km
+        <input type="checkbox" name="distancias" id="distancias" [(ngModel)]="corrida.distancia5" class="input02"> 5km
+        <input type="checkbox" name="distancias" id="distancias" [(ngModel)]="corrida.distancia10"class="input02"> 10km
+        <input type="checkbox" name="distancias" id="distancias" [(ngModel)]="corrida.distancia25"class="input02"> 25km
 
-        <button type="submit"> Cadastrar Corrida </button>
+        <button type="button" (click)="cadastrar()"> Cadastrar Corrida </button>
     </form>
 </section>
